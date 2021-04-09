@@ -1,0 +1,21 @@
+body {
+  background: linear-gradient(-135deg, #E4A972, #9941D8) fixed;
+}
+.container{
+display: flexbox;
+justify-content: center;
+}
+
+
+header{
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  display: flex;
+  justify-content: space-around;
+  width: ;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">    
+    <link href="css/style.css" rel="stylesheet">
+    <title>BlogForm</title>
+</head>
+<body>
+
+
+    <!-- Header Start -->
+      <div class="container">
+    <header class="mt-5">
+      <a href="/blog_login/brog_app/index.php">ブログTOP</a>
+
+        <nav class="nav">
+          <ul>
+            <!-- <li><a href="/blog_login/brog_app/form.html">ブログを書く</a></li>     -->
+            <!-- <li><a href="/blog_login/brog_app/index.php">一覧</a></li>     -->
+            <li><a href="/blog_login/login_php/public/login.php">ログアウト</a></li>    
+          </ul>
+        </nav>
+
+    </header>
+    <!-- Header End -->
+
+
+
+        <h2 class="mt-5 ">ブログフォーム</h2>
+        <form action="brog_create.php" method="POST">
+            <p>ブログタイトル：</p>
+            <input type="text" name="title">
+            <p>ブログ本文：</p>
+            <textarea name="content" id="content" cols="100" rows="15"></textarea>
+            <br>
+            <p>カテゴリ：</p>
+            <select name="category">
+                <option value="1">日常</option>
+                <option value="2">料理</option>
+                <option value="3">旅行</option>
+                <option value="4">その他</option>
+            </select>
+            <br>
+            <input type="radio" name="publish_status" value="1" checked>公開
+            <input type="radio" name="publish_status" value="2">非公開
+            <br>
+            <input type="submit" value="送信">
+        </form>
+        <a href="/blog_login/brog_app/index.php">戻る</a>
+    </div>
+</body>
+</html>
